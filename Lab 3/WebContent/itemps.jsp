@@ -27,6 +27,17 @@
 					}
 
 		}
+	
+	/*if (request.getParameter("itemID") != null)
+	 {
+	 Item itemObj = new Item();
+	 String stsMsg = itemObj.deleteItem(Integer.parseInt(request.getParameter("itemID")));
+	 session.setAttribute("statusMsg", stsMsg);
+	 }
+	*/
+	
+	
+	
 %>
   
 
