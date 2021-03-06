@@ -100,10 +100,10 @@ public class Item {
      output += "<td><form method='post' action='itemps.jsp'>"
     		 +"<input name='itemID' type='hidden' value='" + itemID + "'>"
     		 + "<input name='action' value='select' type='hidden'>"
-    		 + "<input name='btnUpdate' type='submit' value='Update'>"
+    		 + "<input name='btnUpdate' type='submit' value='Update'class='btn btn-secondary' >"
     		 + "</form></td>"
     		 + "<td><form method='post' action='itemps.jsp'>"
-    		 + "<input name='btnRemove' type='submit' value='Remove'>"
+    		 + "<input name='btnRemove' type='submit' value='Remove'class='btn btn-danger'>"
     		 + "<input name='action' value='delete' type='hidden'>"
     		 + "<input name='itemID' type='hidden' value='" + itemID + "'>"
     		 + "</form></td></tr>";
@@ -185,12 +185,12 @@ public class Item {
 				output += "<form method=post action=itemps.jsp>"
 						+ " <input name='action' value='update' type='hidden'>"
 						+ " Item ID: '"+itemID+ "'<br>"
-						+ " Item code: <input name=itemCode type=text value='"+itemCode+ "'><br>"
-						+ " Item name: <input name=itemName type=text value='"+itemName+ "'><br>"
-						+ " Item price: <input name=itemPrice type=text value='"+itemPrice+ "'><br>"
-						+ " Item description: <input name=itemDesc type=text value='"+itemDesc+ "'><br>"
+						+ " Item code: <input name=itemCode type=text class= form-control value='"+itemCode+ "'><br>"
+						+ " Item name: <input name=itemName type=text class= form-control value='"+itemName+ "'><br>"
+						+ " Item price: <input name=itemPrice type=text class= form-control value='"+itemPrice+ "'><br>"
+						+ " Item description: <input name=itemDesc type=text class= form-control value='"+itemDesc+ "'><br>"
 						+ " <input name='itemID' type='hidden' value='" + itemID + "'>"
-						+ " <input name=btnSubmit type=submit value=Update >"
+						+ " <input name=btnSubmit type=submit value=Update class='btn btn-secondary' >"
 						+ " </form>";
 			}
 			con.close();
